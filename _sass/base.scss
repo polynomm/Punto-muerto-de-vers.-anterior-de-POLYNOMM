@@ -63,6 +63,7 @@ a {
   text-decoration: none;
 }
 
+
 a:not([class]) {
   text-decoration: none;
   background-image: linear-gradient($border-color 0%, $border-color 100%);
@@ -75,7 +76,6 @@ a:not([class]) {
       rgba($link-color, 0.45) 0%,
       rgba($link-color, 0.45) 100%
     );
-    background-size: 1px 1px;
   }
 }
 

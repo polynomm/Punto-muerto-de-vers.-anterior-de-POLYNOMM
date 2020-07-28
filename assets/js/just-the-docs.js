@@ -175,7 +175,7 @@ function searchLoaded(index, docs) {
     if (results.length == 0) {
       var noResultsDiv = document.createElement('div');
       noResultsDiv.classList.add('search-no-result');
-      noResultsDiv.innerText = 'No results found';
+      noResultsDiv.innerText = 'Sólo queda ir a Google :(';
       searchResults.appendChild(noResultsDiv);
 
     } else {
