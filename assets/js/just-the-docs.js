@@ -69,34 +69,14 @@ function initNav() {
 
 function initSearch() {
   var request = new XMLHttpRequest();
-  request.open('GET', '{{ "assets/js/search-data.json" | absolute_url }}', true);
+  request.open('GET', 'assets/js/search-index.json', true);
 
   request.onload = function(){
     if (request.status >= 200 && request.status < 400) {
-      var docs = JSON.parse(request.responseText);
-      
-      lunr.tokenizer.separator = {{ site.search.tokenizer_separator | default: site.search_tokenizer_separator | default: "/[\s\-/]+/" }}
-
-      var index = lunr(function(){
-        this.ref('id');
-        this.field('title', { boost: 200 });
-        this.field('content', { boost: 2 });
-        {%- if site.search.rel_url != false %}
-        this.field('relUrl');
-        {%- endif %}
-        this.metadataWhitelist = ['position']
-
-        for (var i in docs) {
-          this.add({
-            id: i,
-            title: docs[i].title,
-            content: docs[i].content,
-            {%- if site.search.rel_url != false %}
-            relUrl: docs[i].relUrl
-            {%- endif %}
-          });
-        }
-      });
+      var searchData = JSON.parse(request.responseText);
+      lunr.tokenizer.separator = /[\s\-/]+/
+      var index = lunr.Index.load(searchData["index"])
+      var docs = searchData["docs"]
 
       searchLoaded(index, docs);
     } else {
