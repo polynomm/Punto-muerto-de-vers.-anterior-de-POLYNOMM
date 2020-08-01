@@ -85,8 +85,14 @@ a:not([class]){
   transition: all ease;
 }
 
-.site-title.lh-tight:hover span {display:none}
-.site-title.lh-tight:hover:before, .site-title.lh-tight:active:before {content:"POLYNOMM"; color:WHITE}
+.site-title.lh-tight:hover span {
+  display:none
+}
+.site-title.lh-tight:hover:before, .site-title.lh-tight:active:before {
+  content:"POLYNOMM"; 
+  color:WHITE; 
+  padding-top: .5rem;
+  padding-bottom: .5rem;}
 
 .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
   color: $degradado-sitio-texto-color; 
