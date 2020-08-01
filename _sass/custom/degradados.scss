@@ -5,13 +5,13 @@ Para un degradado, sólo es necesario especificar dos clases:
 */
 
 //Degradado predeterminado
-$degradado-sitio: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%) !default; 
+$degradado-sitio: linear-gradient(to top, #21D4FD 0%, #B721FF 100%) !default; 
 $degradado-sitio-texto-color: white !default;
 
 @mixin degradado($degradado){
     background-image: $degradado;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 //Colores degradados
 .degradado {
@@ -36,7 +36,7 @@ $degradado-sitio-texto-color: white !default;
 Degradados del tema.
 */
 a{
-  background-size: cover;
+  background-size: 100% 100%;
 }
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
   a{
