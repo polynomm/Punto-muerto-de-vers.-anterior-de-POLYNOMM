@@ -10,7 +10,7 @@ last_modified_date: 2020-04-27T17:54:08+0000
 # Focus on writing good documentation
 {: .fs-9 }
 
-$$ x^2 $$
+\$\$ x^2 \$\$
 {: .degradado .degradado-texto}
 
 <span>$x^2$</span>{: .degradado .degradado-texto} Madre de todos los cuadrados.
