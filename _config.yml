@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: OMM TLX
 description: Página oficial
-baseurl: "/omm-tlx.github.io" # the subpath of your site, e.g. /blog
-url: "https://omm-tlx.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/polynomm.github.io" # the subpath of your site, e.g. /blog
+url: "https://polynomm.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
