@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: OMMega
+title: $$a_{n}x^n+a_{n-1}x^{n-1}+\dots+a_{1}x+a_0$$
 description: Página oficial
-baseurl: "/ommega.github.io" # the subpath of your site, e.g. /blog
-url: "https://ommega.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/polynomm.github.io" # the subpath of your site, e.g. /blog
+url: "https://polynomm.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
