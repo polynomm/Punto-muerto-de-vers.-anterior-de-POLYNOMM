@@ -10,12 +10,7 @@ last_modified_date: 2020-04-27T17:54:08+0000
 # Focus on writing good documentation
 {: .fs-9 }
 
-<span>
-
-$$ x^2 $$
-
-</span>
-{: .degradado .degradado-texto}
+$$ x^2 $$ {: .degradado .degradado-texto}
 
 <span>$x^2$</span>{: .degradado .degradado-texto} Madre de todos los cuadrados.
 Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
