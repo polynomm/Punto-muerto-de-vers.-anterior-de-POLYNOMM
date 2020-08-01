@@ -86,7 +86,7 @@ a:not([class]){
 }
 
 .site-title.lh-tight:hover span {display:none}
-.site-title.lh-tight:hover:before {content:"POLYNOMM"; color:WHITE}
+.site-title.lh-tight:hover:before, .site-title.lh-tight:active:before {content:"POLYNOMM"; color:WHITE}
 
 .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
   color: $degradado-sitio-texto-color; 
