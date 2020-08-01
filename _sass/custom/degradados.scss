@@ -79,7 +79,7 @@ a:not([class]){
   display: inline-flex;
 }
 
-.site-title:hover , .nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active{
+.site-title:hover, .site-button:hover , .nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active{
   @extend .degradado;
   @extend .degradado-fondo;
   transition: all ease;

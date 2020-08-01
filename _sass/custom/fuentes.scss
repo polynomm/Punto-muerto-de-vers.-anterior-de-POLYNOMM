@@ -12,8 +12,17 @@
   }
   
   .nav-list .nav-list-item .nav-list-link.active{
-    font-family: 'Quicksand',sans-serif;
+    font-weight: 700;
   }
+
+  .nav-list .nav-list-item .nav-list-link{
+    font-weight: 600;
+  }
+
   .main-content a{
-      font-weight: 600;
+      font-weight: 500;
+  }
+
+  .site-button{
+    font-weight: 700;
   }
