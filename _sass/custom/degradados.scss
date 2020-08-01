@@ -84,6 +84,10 @@ a:not([class]){
   @extend .degradado-fondo;
   transition: all ease;
 }
+
+.site-title.lh-tight:hover span {display:none}
+.site-title.lh-tight:hover:before {content:"POLYNOMM"; color:WHITE}
+
 .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
   color: $degradado-sitio-texto-color; 
 }
