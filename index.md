@@ -7,7 +7,7 @@ permalink: /
 last_modified_date: 2020-04-27T17:54:08+0000
 ---
 
-# Focus on writing good documentation<span class="jpa-rel-whale jpa-05em"></span>
+# Focus on writing good documentation<span class="jpa-all-default-rel-grimancing_face_with_heart_eyes jpa-1em"></span>
 {: .fs-9 }
 
 \$\$x^2\$\$
