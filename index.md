@@ -7,7 +7,7 @@ permalink: /
 last_modified_date: 2020-04-27T17:54:08+0000
 ---
 
-# Focus on writing good documentation<span class="jpa-grinning jpa-sm"></span>
+# Focus on writing good documentation<span class="jpa-crossed_fingers_face jpa-sm"></span>
 {: .fs-9 }
 
 \$\$x^2\$\$
