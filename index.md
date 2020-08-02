@@ -7,14 +7,14 @@ permalink: /
 last_modified_date: 2020-04-27T17:54:08+0000
 ---
 
-# Focus on writing good documentation
+# Focus on writing good documentation<span class="jpa-grinning jpa-sm"></span>
 {: .fs-9 }
 
 \$\$x^2\$\$
 {: .degradado .degradado-texto}
 
 <span style="color:transparent;">\\(x^2\\)</span>{: .degradado .degradado-texto} Madre de todos los cuadrados.
-Just the Docs :hot-face: gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+Just the Docs  gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
 {: .fs-6 .fw-300 }
 
 [Get started now](#getting-started){: .btn .degradado .degradado-fondo .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .degradado .degradado-texto .fs-5 .mb-4 .mb-md-0 }
