@@ -113,11 +113,11 @@ compress_html:
 emoji_plus:
   # The emoji's image host url, 'https://github.githubassets.com' (default).
   # The trailing can't end with '/', and it's can be setting to '' (empty string).
-  host: 'https://github.githubassets.com'
+  host: 'https://github.com/polynomm'
   
   # The emoji's image path of above host url, '/images/icons/' (default).
   # If it must start with '/' character, and it's can not be a empty string.
-  path: '/images/icons/'
+  path: '/polynomm.github.io/assets/images'
 
   image:
     class: 'emoji'    # The emoji's css class name. 'emoji' (default)
@@ -135,7 +135,7 @@ emoji_plus:
     #
     #   https://github.githubassets.com/images/icons/emoji/unicode/1f371.png?v8
     #
-    image_src: 'https://github.com/polynomm/polynomm.github.io/assets/images/emoji/[image-filename].[image-extname]?v8'
+    image_src: '/emoji/[image-filename].[image-extname]?v8'
 
     #
     # [emoji-class]: The emoji's css class name, value = [jemoji_plus.image.class]
