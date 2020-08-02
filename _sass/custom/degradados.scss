@@ -85,6 +85,11 @@ a:not([class]){
   transition: all ease;
 }
 
+.site-title.lh-tight:hover {
+  svg{
+    color:white;
+  }
+}
 .site-title.lh-tight:hover:before, .site-title.lh-tight:active:before {
   content:"POLYNOMM"; 
   color:WHITE; 
