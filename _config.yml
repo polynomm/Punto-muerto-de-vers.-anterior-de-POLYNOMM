@@ -135,7 +135,7 @@ emoji_plus:
     #
     #   https://github.githubassets.com/images/icons/emoji/unicode/1f371.png?v8
     #
-    image_src: '[image-baseurl]emoji/unicode/[image-filename].[image-extname]?v8'
+    image_src: 'https://github.com/polynomm/polynomm.github.io/assets/images/emoji/[image-filename].[image-extname]?v8'
 
     #
     # [emoji-class]: The emoji's css class name, value = [jemoji_plus.image.class]
