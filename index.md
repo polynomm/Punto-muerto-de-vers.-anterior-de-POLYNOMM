@@ -56,7 +56,7 @@ Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generat
 
                 window.onload = function() { applet.inject('applet_container'); }
   </script>
-<div id="applet_container"></div>{:.geo-print30}
+<div><div id="applet_container" class="geo-print50"></div></div>
 
 ### Quick start: Use as a GitHub Pages remote theme
 
