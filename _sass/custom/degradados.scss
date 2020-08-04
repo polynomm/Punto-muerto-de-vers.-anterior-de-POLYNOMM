@@ -1,12 +1,11 @@
+@use "sass:map";
 /*
 Para un degradado, sólo es necesario especificar dos clases:
 .degradado
 .degradado-fondo o .degradado-texto, según lo que se quiera.
 */
 
-//Degradado predeterminado
-$degradado-sitio: linear-gradient(to top, #21D4FD 0%, #B721FF 100%) !default; 
-$degradado-sitio-texto-color: white !default;
+//Degradado predeterminado en variables propias, sección degradado.
 
 @mixin degradado($degradado){
     background-image: $degradado;
@@ -16,91 +15,218 @@ $degradado-sitio-texto-color: white !default;
 //Colores degradados
 .degradado {
     @include degradado($degradado-sitio);
-    $degradado-sitio-texto-color:white;
   }
   .teoriaDeNumeros {
     @include degradado(linear-gradient(19deg, #21D4FD 0%, #B721FF 100%));
   }
 
 //Degradado a fondo o texto
-.degradado-texto{
+@mixin degradado-texto{
   -webkit-text-fill-color: transparent;
   -webkit-background-clip:text;
 }
-.degradado-fondo{
+
+@mixin degradado-fondo{
   -webkit-text-fill-color: $degradado-sitio-texto-color;
   -webkit-background-clip: padding-box;
 }
 
-/*
-Degradados del tema.
-*/
-a{
-  background-size: 100% 100%;
-}
-h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
-  a{
-      //Los símbolos junto a los encabezados (svg) son el contenido
-      -webkit-background-clip: content-box;
-      svg{
-          color: black;
-          background: white;
-          mix-blend-mode: screen;
-      }
-  }
+.degradado-texto{
+  @include degradado-texto();
 }
 
-.search-result-highlight{
-  @extend .degradado;
-  @extend .degradado-texto;
-  display: inline-flex;
+.degradado-fondo{
+  @include degradado-fondo();
 }
 
-a:hover{
-  @extend .degradado;
-  @extend .degradado-texto;
-}
-
-a.search-result{
-  @extend .bg-grey-dk-000;
+//Coloreado alternativo
+@mixin alternativa-texto{
+  color: $alternativa-degradado;
+  background-color: unset;
   background-image: unset;
+  background-attachment: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
 }
 
-a:not(.btn){
-  //Se hacer que el texto tenga la $background-image de fondo.
-  @extend .degradado;
-  @extend .degradado-texto;
-  $link-color:black;
-  //cuando el mouse se posiciona.
+@mixin alternativa-fondo{
+  background-color: $alternativa-degradado;
+  color: $alternativa-texto-color;
+  background-image: unset;
+  background-attachment: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
 }
+/*
+Degradados del tema para escritorio
+*/
+@media only screen and (min-width: map-get($media-queries,md)){
+  a{
+    background-size: 100% 100%;
+  }
+  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
+    a{
+        //Los símbolos junto a los encabezados (svg) son el contenido
+        -webkit-background-clip: content-box;
+        background-clip: content-box;
+        svg{
+            color: black;
+            background: white;
+            mix-blend-mode: screen;
+        }
+    }
+  }
+  
+  .search-result-highlight{
+    @include degradado($degradado-sitio);
+    @include degradado-texto;
+    display: inline-flex;
+  }
+  
+  a:hover{
+    @include degradado($degradado-sitio);
+    @include degradado-texto;
+  }
+  
+  a.search-result{
+    color: bg-grey-dk-000;
+    -webkit-text-fill-color: unset !important;
+  }
+  
+  a:not(.btn){
+    //Se hacer que el texto tenga la $background-image de fondo.
+    @include degradado($degradado-sitio);
+    @include degradado-texto;
+    $link-color:black;
+    //cuando el mouse se posiciona.
+  }
+  
+  a:not([class]){
+    //Con esto se aplica el degradado correctamente a los links sin clase.
+    display: inline-flex;
+  }
+  
+  .site-title:hover, .site-button:hover , .nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active{
+    @include degradado($degradado-sitio);
+    @include degradado-fondo();
+    transition: all ease;
+  }
+  
+  .site-button:hover{
+    svg{
+      color:white;
+    }
+  }
+  .site-title.lh-tight:hover:before, .site-title.lh-tight:active:before {
+    content:"POLYNOMM"; 
+    color:WHITE; 
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
 
-a:not([class]){
-  //Con esto se aplica el degradado correctamente a los links sin clase.
-  display: inline-flex;
-}
-
-.site-title:hover, .site-button:hover , .nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active{
-  @extend .degradado;
-  @extend .degradado-fondo;
-  transition: all ease;
-}
-
-.site-button:hover {
-  svg{
-    color:white;
+  .site-title.lh-tight:hover, .site-title.lh-tight:active{
+    span{
+      mjx-container{
+        display:none !important;
+      }
+    }
+  }
+  
+  .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
+    color: $degradado-sitio-texto-color; 
+  }
+  
+  .degradado-texto>mjx-container{
+    @include degradado($degradado-sitio);
+    @include degradado-texto;
   }
 }
-.site-title.lh-tight:hover:before, .site-title.lh-tight:active:before {
-  content:"POLYNOMM"; 
-  color:WHITE; 
-  padding-top: .5rem;
-  padding-bottom: .5rem;}
 
-.nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
-  color: $degradado-sitio-texto-color; 
+//
+// print
+// 
+
+@media not screen and (min-width: map-get($media-queries,md)){
+  a{
+    @include alternativa-texto();
+  }
+  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
+    a{
+        //Los símbolos junto a los encabezados (svg) son el contenido
+        -webkit-background-clip: none;
+        background-clip: none;
+        svg{
+            @include alternativa-texto();
+            mix-blend-mode: unset;
+        }
+    }
+  }
+  
+  .search-result-highlight{
+    @include alternativa-texto();
+    display: inline-flex;
+  }
+  
+  a:hover{
+    @include alternativa-fondo();
+  }
+  
+  a.search-result{
+    color: bg-grey-dk-000;
+    background-image: unset;
+  }
+  
+  a:not(.btn){
+    //Se hacer que el texto tenga la $background-image de fondo.
+
+    @include alternativa-texto();
+    $link-color:black;
+    //cuando el mouse se posiciona.
+  }
+  
+  a:not([class]){
+    //Con esto se aplica el degradado correctamente a los links sin clase.
+    display: inline-flex;
+  }
+  
+  .site-title:hover, .site-button:hover , .nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active{
+    @include alternativa-fondo();
+    transition: all ease;
+  }
+  
+  .site-button:hover {
+    svg{
+      color:white;
+    }
+  }
+  .site-title.lh-tight:hover:before, .site-title.lh-tight:active:before {
+    content:"POLYNOMM"; 
+    color:WHITE; 
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .site-title.lh-tight:hover, .site-title.lh-tight:active{
+    span{
+      mjx-container{
+        display:none !important;
+      }
+    }
+  }
+  
+  .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
+    @include alternativa-texto();
+  }
+  
+  .degradado{
+    @include alternativa-fondo()
+  }
+  
+  .degradado-texto{
+    @include alternativa-texto();
+  }
+  .degradado-texto>mjx-container{
+    @include alternativa-texto();
+  }
 }
 
-.degradado-texto>mjx-container{
-  @extend .degradado;
-  @extend .degradado-texto;
-}

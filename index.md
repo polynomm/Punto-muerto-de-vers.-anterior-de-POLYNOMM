@@ -27,6 +27,37 @@ Just the Docs  gives your documentation a jumpstart with a responsive Jekyll the
 
 Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
 
+<script type="text/javascript">
+				function perspective(p){
+					updateHelp(p);
+					ggbApplet.setPerspective(p);
+				}
+                var parameters = {
+                        "id":"ggbApplet",
+                        "appName":"geometry",
+                        "width":800,
+                        "height":600,
+                        "showToolBar":true,
+                        "borderColor":null,
+                        "showMenuBar":true,
+                        "allowStyleBar":true,
+                        "showAlgebraInput":true,
+                        "enableLabelDrags":false,
+                        "enableShiftDragZoom":true,
+                        "capturingThreshold":null,
+                        "showToolBarHelp":false,
+                        "errorDialogsActive":true,
+                        "showTutorialLink":true,
+                        "showLogging":true,
+                        "useBrowserForJS":false};
+                var applet = new GGBApplet(parameters, '5.0', 'applet_container');
+               /*  when used with Math Apps Bundle, uncomment this:*/
+                /*applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web3d/');*/
+
+                window.onload = function() { applet.inject('applet_container'); }
+  </script>
+<div id="applet_container"></div>{:.geo-print30}
+
 ### Quick start: Use as a GitHub Pages remote theme
 
 1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)

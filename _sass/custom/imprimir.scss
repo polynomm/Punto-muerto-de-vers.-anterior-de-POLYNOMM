@@ -1,0 +1,38 @@
+@media print{
+    .no-imprimir{
+        display:none;
+    }
+    @page:first{
+        margin-top:3cm;
+    }
+    @page{
+        margin: 2.5cm;
+    }
+    .main-content-wrap{
+        padding-top:-8px !important;
+    }
+    p a[href^="http://"]:after {
+        content: " (" attr(href) ")";
+        font-size: 90%;
+    }
+    .site-header{
+        min-height: unset;
+        height: 40px;
+        border-bottom: none;
+        background-color: white;
+        pointer-events: none;
+    }
+    .site-title.lh-tight:hover:before, .site-title.lh-tight:active:before {
+        content:unset;
+        background-color: white;
+        color:unset; 
+        padding-top: unset;
+        padding-bottom: unset;
+    }
+    body{
+        color: $grey-dk-250;
+        font-weight: 300;
+        -webkit-print-color-adjust:exact;
+        color-adjust: exact;
+    }
+}
