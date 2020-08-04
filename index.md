@@ -57,7 +57,7 @@ Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generat
                 window.onload = function() { applet.inject('applet_container'); }
   </script>
   <!--Encerrar dentro de un div el applet soluciona el problema de impresión en escritorio (el applet se mueve de su posición) En teléfonos cambia sigue el problem.-->
-<div><div id="applet_container" class="geo-print50"></div></div>
+<div class="geo-div50"><div class="geo-ajuste50"><div id="applet_container" class="geo-print50"></div></div>
 
 ### Quick start: Use as a GitHub Pages remote theme
 

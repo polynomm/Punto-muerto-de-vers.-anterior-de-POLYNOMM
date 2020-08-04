@@ -11,10 +11,6 @@
     .main-content-wrap{
         padding-top:-8px !important;
     }
-    p a[href^="http://"]:after {
-        content: " (" attr(href) ")";
-        font-size: 90%;
-    }
     .site-header{
         min-height: unset;
         height: 40px;

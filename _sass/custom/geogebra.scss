@@ -1,6 +1,12 @@
 @media print{
-    .gwt-SplitLayoutPanel.hide-Dragger, .undoRedoPanel{
-        display:none;
+    .floatingMenuView.transitionIn, .undoRedoPanel div{
+        width:0;
+    }
+    .geo-div50{
+        height: 50%;
+    }
+    .geo-ajuste50{
+        width:50%;
     }
     .geo-print95{
         transform: translateX(-12.5%) scale(0.95);
@@ -48,9 +54,8 @@
         margin-bottom: calc(-45% + 20px);
     }
     .geo-print50{
-        transform: translateX(-12.5%) scale(0.5);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-50% + 20px);
+        transform: scale(0.5);
+        transform-origin: 0% 0%;
     }
     .geo-print45{
         transform: translateX(-12.5%) scale(0.45);
