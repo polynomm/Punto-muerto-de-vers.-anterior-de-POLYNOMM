@@ -2,12 +2,10 @@
     .floatingMenuView.transitionIn, .undoRedoPanel div{
         width:0;
     }
-    .geo-div50{
-        margin-bottom: 30px;
-    }
-    .geo-ajuste50{
-        width:50%;
-        margin-bottom: -37.5%;
+    .geo-div{
+        width: 50% !important;
+    height: 0;
+    padding-bottom: calc(50% + 30px)!important;
     }
     .geo-print95{
         transform: translateX(-12.5%) scale(0.95);

@@ -26,6 +26,7 @@ Just the Docs  gives your documentation a jumpstart with a responsive Jekyll the
 ### Dependencies
 
 Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
+Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
 
 <script type="text/javascript">
 				function perspective(p){
@@ -49,7 +50,10 @@ Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generat
                         "errorDialogsActive":true,
                         "showTutorialLink":true,
                         "showLogging":true,
-                        "useBrowserForJS":false};
+                        "useBrowserForJS":false,
+                        "autoHeight":false,
+                        "allowUpScale":true
+                        };
                 var applet = new GGBApplet(parameters, '5.0', 'applet_container');
                /*  when used with Math Apps Bundle, uncomment this:*/
                 /*applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web3d/');*/
@@ -57,7 +61,7 @@ Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generat
                 window.onload = function() { applet.inject('applet_container'); }
   </script>
   <!--Encerrar dentro de un div el applet soluciona el problema de impresión en escritorio (el applet se mueve de su posición) En teléfonos cambia sigue el problem.-->
-<div class="geo-div50"><div class="geo-ajuste50"><div id="applet_container" class="geo-print50"></div></div></div>
+<div class="geo-div"><div class="geo-ajuste50"><div id="applet_container" class="geo-print50"></div></div></div>
 
 ### Quick start: Use as a GitHub Pages remote theme
 
