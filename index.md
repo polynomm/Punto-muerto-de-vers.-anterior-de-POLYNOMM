@@ -11,7 +11,7 @@ last_modified_date: 2020-04-27T17:54:08+0000
 {: .fs-9 }
 
 \$\$x^2\$\$
-{: .degradado .degradado-texto}
+{: .degradado .degradado-texto .math-display}
 
 <span>\\(x^2\\)</span>{: .degradado .degradado-texto} Madre de todos los cuadrados.
 Just the Docs  gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
@@ -51,8 +51,9 @@ Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generat
                         "showTutorialLink":true,
                         "showLogging":true,
                         "useBrowserForJS":false,
-                        "autoHeight":false,
-                        "allowUpScale":true
+                        "autoHeight":true,
+                        "scaleContainerClass":"geo-ajuste50",
+                        "allowUpScale":false
                         };
                 var applet = new GGBApplet(parameters, '5.0', 'applet_container');
                /*  when used with Math Apps Bundle, uncomment this:*/
@@ -98,6 +99,9 @@ $ jekyll serve
 $ bundle exec jekyll serve
 ```
 4. Point your web browser to [http://localhost:4000](http://localhost:4000)
+
+\$\$x^2\$\$
+{: .degradado .degradado-texto .math-display}
 
 If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 

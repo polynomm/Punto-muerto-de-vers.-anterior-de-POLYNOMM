@@ -7,6 +7,9 @@ Para un degradado, sólo es necesario especificar dos clases:
 
 //Degradado predeterminado en variables propias, sección degradado.
 
+.math-display{
+  display: grid !important;
+}
 @mixin degradado($degradado){
     background-image: $degradado;
     background-attachment: fixed;
@@ -45,7 +48,7 @@ Para un degradado, sólo es necesario especificar dos clases:
   background-color: unset;
   background-image: unset;
   background-attachment: unset;
-  background-clip: unset;
+  -webkit-background-clip: unset;
   -webkit-text-fill-color: unset;
 }
 
@@ -68,7 +71,6 @@ Degradados del tema para escritorio
     a{
         //Los símbolos junto a los encabezados (svg) son el contenido
         -webkit-background-clip: content-box;
-        background-clip: content-box;
         svg{
             color: black;
             background: white;
@@ -91,6 +93,14 @@ Degradados del tema para escritorio
   a.search-result{
     color: bg-grey-dk-000;
     -webkit-text-fill-color: unset !important;
+    background-image: none !important;
+    &:hover{
+      display:block;
+    }
+  }
+
+  a.nav-list-expander svg{
+    display: inline-block !important;
   }
   
   a:not(.btn){
@@ -119,9 +129,9 @@ Degradados del tema para escritorio
   }
   .site-title.lh-tight:hover:before, .site-title.lh-tight:active:before {
     content:"POLYNOMM"; 
-    color:WHITE; 
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    font-size: 24px;
+    margin: 1.75em;
+    color:WHITE;
   }
 
   .site-title.lh-tight:hover, .site-title.lh-tight:active{
@@ -139,6 +149,12 @@ Degradados del tema para escritorio
   .degradado-texto>mjx-container{
     @include degradado($degradado-sitio);
     @include degradado-texto;
+  }
+  span.degradado.degradado-texto{
+    display: inline-flex;
+    &::selection{
+      -webkit-text-fill-color: white;
+    }
   }
 }
 
@@ -201,9 +217,10 @@ Degradados del tema para escritorio
   }
   .site-title.lh-tight:hover:before, .site-title.lh-tight:active:before {
     content:"POLYNOMM"; 
-    color:WHITE; 
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    font-size: 24px;
+    margin: 1em;
+    color:WHITE;
+
   }
 
   .site-title.lh-tight:hover, .site-title.lh-tight:active{

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Poly... ¿qué?
+title: <span class="degradado-texto">$$ f(x) $$</span>
 nav_order: 9
 description: "Declaración de todas las intenciones del sitio."
 permalink: /Documentos/POLYNOMM
@@ -11,7 +11,7 @@ last_modified_date: 2020-04-27T17:54:08+0000
 {:.fs-9}
 
 
-Este sitio está dedicado a toda la comunidad <span> olímpica </span>{:.degradado .degradado-texto} en el estado de Tlaxcala <i class="jpa-anim-rel-smiling_face_with_heart_eyes jpa-2em"></i>
+Este sitio está dedicado a toda la comunidad <span> olímpica </span>{:.degradado .degradado-texto} del estado de Tlaxcala <i class="jpa-anim-rel-smiling_face_with_heart_eyes jpa-2em"></i>
 {:.fs-6 .fw-300}
 
 ---
@@ -46,18 +46,17 @@ En cualquier caso, ¡todas las dinámicas y el contenido publicado en este sitio
 
 El sitio está diseñado para ser no sólo una página web, ¡es una navaja suiza olímpica!
 
-Descubre más en la sección <span class="degradado degradado-texto">\(f(x)\)</span>.
+Descubre más en la sección <span class="degradado degradado-texto">\\(f(x)\\)</span>.
 
 ### Diseño y optimización.
 
 Este sitio tiene dos principios de desarrollo: simplicidad y estética, porque...
 
-<span>...¡Qué bonito es lo bonito!</span>{:.degradado .degradado-texto}<i class="jpa-anim-rel-beaming_face_with_smiling_eyes jpa-2em"></i>
-{:.fs-5}
+<span class="degradado degradado-texto .fs-5">...¡Qué bonito es lo bonito!</span><i class="jpa-anim-rel-beaming_face_with_smiling_eyes jpa-2em"></i>
 
 ## Desarrollo y propiedad.
 
-Este sitio es personal. El desarrollador utilizó diversos componentes, cuyas licencias exigen que este sitio no pertenezca a una organización, dependencia, ONG, y un largo etcéeeetera que incluye muchas condiciones (que existen, y no deben infringirse).
+Este sitio es personal. El desarrollador utilizó diversos componentes, cuyas licencias exigen que este sitio no pertenezca a una organización, dependencia, ONG, y un largo etcéeeetera que, además, incluye muchas condiciones (las cuales no deben infringirse).
 
 Sin embargo, esto no afecta tu experiencia en el sitio.
 
