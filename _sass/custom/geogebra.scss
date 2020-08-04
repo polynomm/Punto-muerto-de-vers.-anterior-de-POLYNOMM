@@ -3,11 +3,11 @@
         width:0;
     }
     .geo-div50{
-        height: 0 !important;
+        margin-bottom: 30px;
     }
     .geo-ajuste50{
         width:50%;
-        margin-bottom: calc(-50% + 30px);
+        margin-bottom: -37.5%;
     }
     .geo-print95{
         transform: translateX(-12.5%) scale(0.95);
@@ -87,6 +87,5 @@
 
 @media only screen and (max-width:map-get($media-queries, lg)-1px){
     .geo-ajuste50{
-        margin-bottom: calc(0% + 30px) !important;
     }
 }
