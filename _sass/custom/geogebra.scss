@@ -3,10 +3,11 @@
         width:0;
     }
     .geo-div50{
-        height: 0px !important;
+        height: 0 !important;
     }
     .geo-ajuste50{
         width:50%;
+        margin-bottom: calc(-50% + 30px);
     }
     .geo-print95{
         transform: translateX(-12.5%) scale(0.95);
@@ -81,5 +82,11 @@
         transform: translateX(-12.5%) scale(0.30);
         transform-origin: 50% 0%;
         margin-bottom: calc(-70% + 20px);
+    }
+}
+
+@media only screen and (max-width:map-get($media-queries, lg)-1px){
+    .geo-ajuste50{
+        margin-bottom: calc(-37.5% + 30px) !important;
     }
 }
