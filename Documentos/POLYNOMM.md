@@ -1,22 +1,22 @@
 ---
 layout: default
-title: <span class="degradado-texto">$$ f(x) $$</span>
+title: <span>$$ f(x) $$</span>
 nav_order: 9
 description: "Declaración de todas las intenciones del sitio."
 permalink: /Documentos/POLYNOMM
 last_modified_date: 2020-04-27T17:54:08+0000
 ---
 
-# ¡Esto es POLYN<span class="degradado degradado-texto">OMM</span>.github.io!<i class="jpa-anim-rel-partying_face jpa-2em"></i>
+# ¡Esto es POLYN<span class="deg-sitio deg-texto">OMM</span>.github.io!<i class="jpa-anim-rel-partying_face jpa-2em"></i>
 {:.fs-9}
 
 
-Este sitio está dedicado a toda la comunidad <span> olímpica </span>{:.degradado .degradado-texto} del estado de Tlaxcala <i class="jpa-anim-rel-smiling_face_with_heart_eyes jpa-2em"></i>
+Este sitio está dedicado a toda la comunidad <span> olímpica </span>{:.deg-sitio .deg-texto} del estado de Tlaxcala <i class="jpa-anim-rel-smiling_face_with_heart_eyes jpa-2em"></i>
 {:.fs-6 .fw-300}
 
 ---
 
-## ¿Qué encontrarás en POLYN<span class="degradado degradado-texto">OMM</span>?
+## ¿Qué encontrarás en POLYN<span class="deg-sitio deg-texto">OMM</span>?
 
 ### Artículos
 
@@ -46,13 +46,13 @@ En cualquier caso, ¡todas las dinámicas y el contenido publicado en este sitio
 
 El sitio está diseñado para ser no sólo una página web, ¡es una navaja suiza olímpica!
 
-Descubre más en la sección <span class="degradado degradado-texto">\\(f(x)\\)</span>.
+Descubre más en la sección <span class="deg-sitio deg-texto">\\(f(x)\\)</span>.
 
 ### Diseño y optimización.
 
 Este sitio tiene dos principios de desarrollo: simplicidad y estética, porque...
 
-<span class="degradado degradado-texto .fs-5">...¡Qué bonito es lo bonito!</span><i class="jpa-anim-rel-beaming_face_with_smiling_eyes jpa-2em"></i>
+<span class="deg-sitio deg-texto .fs-5">...¡Qué bonito es lo bonito!</span><i class="jpa-anim-rel-beaming_face_with_smiling_eyes jpa-2em"></i>
 
 ## Desarrollo y propiedad.
 

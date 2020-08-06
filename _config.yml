@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: <span class="degradado degradado-texto">$$a_{n}x^n+\dots+a_0$$</span>
+title: <span class="deg-sitio deg-texto">$$a_{n}x^n+\dots+a_0$$</span>
 description: Página oficial
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://polynomm.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -90,7 +90,7 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 
 # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
 #color_scheme: nil
-color_scheme: degradado-light
+color_scheme: degSitio
 
 # Google Analytics Tracking (optional)
 # e.g, UA-1234567-89

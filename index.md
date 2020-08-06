@@ -6,18 +6,23 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 last_modified_date: 2020-04-27T17:54:08+0000
 ---
+<script type="text/javascript">
+window.addEventListener("load", function(){
+    jtd.setTheme('degVerde');
+});
+</script>
 
 # Focus on writing good documentation<i class="jpa-anim-rel-smiling_face_with_sunglasses jpa-1em"></i><i class="jpa-heart_eyes jpa-1em"></i>
 {: .fs-9 }
 
 \$\$x^2\$\$
-{: .degradado .degradado-texto .math-display}
+{: .deg-sitio .deg-texto .math-display}
 
-<span>\\(x^2\\)</span>{: .degradado .degradado-texto} Madre de todos los cuadrados.
+<span>\\(x^2\\)</span>{: .deg-sitio .deg-texto} Madre de todos los cuadrados.
 Just the Docs  gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .degradado .degradado-fondo .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .degradado .degradado-texto .fs-5 .mb-4 .mb-md-0 }
+[Get started now](#getting-started){: .btn .deg-sitio .deg-sitio-fondo .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .deg-sitio .deg-texto .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -61,6 +66,7 @@ Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generat
 
                 window.onload = function() { applet.inject('applet_container'); }
   </script>
+
   <!--Encerrar dentro de un div el applet soluciona el problema de impresión en escritorio (el applet se mueve de su posición) En teléfonos cambia sigue el problem.-->
 <div class="geo-div"><div class="geo-ajuste50"><div id="applet_container" class="geo-print50"></div></div></div>
 
@@ -101,7 +107,7 @@ $ bundle exec jekyll serve
 4. Point your web browser to [http://localhost:4000](http://localhost:4000)
 
 \$\$x^2\$\$
-{: .degradado .degradado-texto .math-display}
+{: .deg-sitio .deg-texto .math-display}
 
 If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 

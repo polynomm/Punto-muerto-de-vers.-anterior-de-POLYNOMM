@@ -13,4 +13,9 @@ $link-color: $grey-dk-300;
 $btn-primary-color: $grey-dk-300;
 $base-button-color: #f7f7f7 !default;
 
-//$background-image : linear-gradient(to bottom, #000000, #0f9b0f);
+$colores-deg-sitio:(
+  deg-sitio: linear-gradient(to bottom, #d7ecb5 0, #caeab4 8.33%, #bbe8b3 16.67%, #abe5b2 25%, #99e1b2 33.33%, #84ddb3 41.67%, #6cd8b4 50%, #4ed3b7 58.33%, #20cebb 66.67%, #00c9c1 75%, #00c5c8 83.33%, #00c0cf 91.67%, #00bcd7 100%) ,
+  alter-deg-sitio: #32ce9a,
+  deg-sitio-texto-color: white ,
+  alter-texto-color: white ,
+);
