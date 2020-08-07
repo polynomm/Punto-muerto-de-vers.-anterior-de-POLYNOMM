@@ -6,7 +6,9 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 last_modified_date: 2020-04-27T17:54:08+0000
 ---
-<link rel="stylesheet" href="{{ '/assets/css/just-the-docs-degVerde.css' | absolute_url }}">
+<script>
+  jtd.setTheme('degVerde');
+  </script>
 
 # Focus on writing good documentation<i class="jpa-anim-rel-smiling_face_with_sunglasses jpa-1em"></i><i class="jpa-heart_eyes jpa-1em"></i>
 {: .fs-9 }
