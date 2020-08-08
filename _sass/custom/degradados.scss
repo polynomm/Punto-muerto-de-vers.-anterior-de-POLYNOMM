@@ -1,6 +1,7 @@
 @use "sass:map";
 //deg-sitio
 
+
 $colores-deg-sitio:(
   deg-sitio: linear-gradient(to top, #21D4FD 0%, #B721FF 100%) ,
   alter-deg-sitio: #6b7afe,
@@ -15,7 +16,8 @@ Para un deg-sitio, sólo es necesario especificar dos clases:
 
 //deg-sitio predeterminado en variables propias, sección deg-sitio.
 
-.math-display{
+//Esto para bloques matemáticos display mode latex
+.grid{
   display: grid !important;
 }
 
@@ -72,6 +74,7 @@ Ajuste para deg-sitios según tema
 @media only screen and (min-width: map-get($media-queries,md)){
   a{
     background-size: 100% 100%;
+    color :#27262b;
   }
   h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
     a{
@@ -185,6 +188,45 @@ Ajuste para deg-sitios según tema
       -webkit-text-fill-color: white;
     }
   }
+  /* Let's get this party started */
+::-webkit-scrollbar {
+  width: 8px;
+  position:static;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  @include deg(map-get($colores-deg-sitio, deg-sitio));
+  position:fixed;
+}
+
+//Geogebra
+.header-open-landscape{
+  @include deg(map-get($colores-deg-sitio, deg-sitio));
+  @include deg-fondo(map-get($colores-deg-sitio, deg-sitio));
+  background-color:white !important;
+}
+.GeoGebraFrame .toolbar .main .moveFloatingBtn, .GeoGebraFrame .toolbar .main .showMoveBtn, .GeoGebraFrame .toolbar .main .hideMoveBtn{
+  background-color: map-get($colores-deg-sitio, alter-deg-sitio);
+}
+.GeoGebraFrame .toolbar .main .moveFloatingBtn:hover, .GeoGebraFrame .toolbar .main .showMoveBtn:hover, .GeoGebraFrame .toolbar .main .hideMoveBtn:hover, .GeoGebraFrame .toolbar .main .moveFloatingBtn:focus, .GeoGebraFrame .toolbar .main .showMoveBtn:focus, .GeoGebraFrame .toolbar .main .hideMoveBtn:focus{
+  background-color: mix(map-get($colores-deg-sitio, alter-deg-sitio), #111, 90%);
+}
+
+.GeoGebraFrame .toolbar .toolsPanel .toolButton[selected=true] .gwt-Label {
+  color: map-get($colores-deg-sitio, alter-deg-sitio);
+  font-weight: 600;
+}
+
+.GeoGebraFrame .toolButton[selected=true] .gwt-Label{
+  color:map-get($colores-deg-sitio, alter-deg-sitio);
+}
 }
 
 /*
@@ -289,4 +331,10 @@ deg-sitios secundarios para coloreado...
 }
 
 @media not screen and (min-width: map-get($media-queries,md)){
+}
+
+*::selection{
+  color: #fff;
+    background: map-get($colores-deg-sitio, alter-deg-sitio) !important;
+      -webkit-text-fill-color: white !important;
 }

@@ -1,3 +1,13 @@
+.main.tools, .main.algebra{
+    margin-left: 0px !important;
+    
+  }
+  #ggbApplet{
+    ::-webkit-scrollbar-thumb {
+        background-image: unset !important;
+        background-color: #ccc;
+      }
+  }
 @media print{
     .floatingMenuView.transitionIn, .undoRedoPanel div{
         width:0;

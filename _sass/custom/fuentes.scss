@@ -1,4 +1,5 @@
-
+$body-font-family:'Raleway',sans-serif;
+$mono-font-family:'Ubuntu Mono', monospace;
   .qs{
     font-family: 'Quicksand', sans-serif;
   }
@@ -37,4 +38,9 @@
 
   .site-button{
     font-weight: 700;
+  }
+
+  .gwt-label ,.GeoGebraFrame,.GeoGebraFrame *, .GeoGebraFrame .GeoGebraPopup, .GeoGebraFrame .DialogBox, .GeoGebraFrame .gwt-PopupPanel, .GeoGebraFrame .gwt-SuggestBoxPopup, .GeoGebraFrame .ToolTip{
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 700 !important;
   }

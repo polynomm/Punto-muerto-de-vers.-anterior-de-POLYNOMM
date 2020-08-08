@@ -6,13 +6,14 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 last_modified_date: 2020-04-27T17:54:08+0000
 ---
-<link rel="stylesheet" href="{{ '/assets/css/just-the-docs-degVerde.css' | absolute_url }}">
+
+<link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | absolute_url }}">
 
 # Focus on writing good documentation<i class="jpa-anim-rel-smiling_face_with_sunglasses jpa-1em"></i><i class="jpa-heart_eyes jpa-1em"></i>
 {: .fs-9 }
 
 \$\$x^2\$\$
-{: .deg-sitio .deg-texto .math-display}
+{: .deg-sitio .deg-texto .grid}
 
 <span>\\(x^2\\)</span>{: .deg-sitio .deg-texto} Madre de todos los cuadrados.
 Just the Docs  gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
@@ -54,7 +55,7 @@ Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generat
                         "useBrowserForJS":false,
                         "autoHeight":true,
                         "scaleContainerClass":"geo-ajuste50",
-                        "allowUpScale":false
+                        "allowUpscale":false
                         };
                 var applet = new GGBApplet(parameters, '5.0', 'applet_container');
                /*  when used with Math Apps Bundle, uncomment this:*/
@@ -141,3 +142,7 @@ email, or any other method with the owners of this repository before making a ch
 Just the Docs is committed to fostering a welcoming community.
 
 [View our Code of Conduct](https://github.com/pmarsceill/just-the-docs/tree/master/CODE_OF_CONDUCT.md) on our GitHub repository.
+
+<script>
+  jtd.setTheme('degVerde')
+  </script>

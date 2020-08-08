@@ -1,21 +1,35 @@
-$body-background-color: $white !default;
-$sidebar-color: $grey-lt-000 !default;
-$search-background-color: $white !default;
-$table-background-color: $white !default;
-$code-background-color: $grey-lt-000 !default;
-$feedback-color: darken($sidebar-color, 3%) !default;
-
-$body-text-color: $grey-dk-100 !default;
-$body-heading-color: $grey-dk-300 !default;
-$search-result-preview-color: $grey-dk-000 !default;
-$nav-child-link-color: $grey-dk-100 !default;
-$link-color: $grey-dk-300;
-$btn-primary-color: $grey-dk-300;
-$base-button-color: #f7f7f7 !default;
-
+@use "sass:map";
 $colores-deg-sitio:(
-  deg-sitio: linear-gradient(to bottom, #d7ecb5 0, #caeab4 8.33%, #bbe8b3 16.67%, #abe5b2 25%, #99e1b2 33.33%, #84ddb3 41.67%, #6cd8b4 50%, #4ed3b7 58.33%, #20cebb 66.67%, #00c9c1 75%, #00c5c8 83.33%, #00c0cf 91.67%, #00bcd7 100%) ,
-  alter-deg-sitio: #32ce9a,
+  deg-sitio: linear-gradient( to top,  rgba(21,21,212,1) 0.9%, rgb(0, 197, 223) 70% ),
+  alter-deg-sitio:  #11c0e0,
   deg-sitio-texto-color: white ,
   alter-texto-color: white ,
 );
+$link-color: $grey-dk-300;
+
+/*
+Naranja aprobado
+background-color: #ba2d0b;
+background-image: linear-gradient(319deg, #ba2d0b 0%, #fe7f2d 37%, #ffbf46 100%);
+
+Otro rojo con amarillo. amarillo ecc100 parece ser buena opción
+background-color: #faff00;
+background-image: linear-gradient(319deg, #faff00 0%, #ff1000 37%, #ff6a00 100%);
+
+creo que negro no funciona, en ningún aspecto, tal vez en escala de grises sí
+background-color: #f06543;
+background-image: linear-gradient(315deg, #f06543 0%, #ffbe3d 74%);
+
+Aprobado rosa morado
+deg-sitio: linear-gradient(to top, #6617cb 0%, #ff00a2 74%),
+  alter-deg-sitio: #6617cb,
+
+Aprobado verde con amarillo y azul
+deg-sitio: linear-gradient(to top, #118ab2 0%, #06d6a0 60%, #ffb300 100%),
+  alter-deg-sitio:  #07caa2,
+
+Aprobado azul
+deg-sitio: linear-gradient( to top,  rgba(21,21,212,1) 0.9%, rgb(0, 197, 223) 70% ),
+  alter-deg-sitio:  rgb(0, 197, 223), Azul más claro de lo que debe
+*/
+

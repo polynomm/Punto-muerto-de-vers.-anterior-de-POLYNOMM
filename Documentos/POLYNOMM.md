@@ -1,6 +1,6 @@
 ---
 layout: default
-title: <span>$$ f(x) $$</span>
+title: $$ f(x) $$
 nav_order: 9
 description: "Declaración de todas las intenciones del sitio."
 permalink: /Documentos/POLYNOMM
@@ -10,6 +10,10 @@ last_modified_date: 2020-04-27T17:54:08+0000
 # ¡Esto es POLYN<span class="deg-sitio deg-texto">OMM</span>.github.io!<i class="jpa-anim-rel-partying_face jpa-2em"></i>
 {:.fs-9}
 
+<link rel="stylesheet" href="{{ '/assets/css/just-the-docs-degVerde.css' | absolute_url }}">
+<script>
+    jtd.setTheme('degVerde');
+</script>
 
 Este sitio está dedicado a toda la comunidad <span> olímpica </span>{:.deg-sitio .deg-texto} del estado de Tlaxcala <i class="jpa-anim-rel-smiling_face_with_heart_eyes jpa-2em"></i>
 {:.fs-6 .fw-300}
@@ -60,6 +64,44 @@ Este sitio es personal. El desarrollador utilizó diversos componentes, cuyas li
 
 Sin embargo, esto no afecta tu experiencia en el sitio.
 
+## Disclaimer
+
+<script type="text/javascript">
+				function perspective(p){
+					updateHelp(p);
+					ggbApplet.setPerspective(p);
+				}
+                var parameters = {
+                        "id":"ggbApplet",
+                        "appName":"geometry",
+                        "width":800,
+                        "height":600,
+                        "showToolBar":true,
+                        "borderColor":null,
+                        "showMenuBar":true,
+                        "allowStyleBar":true,
+                        "showAlgebraInput":true,
+                        "enableLabelDrags":false,
+                        "enableShiftDragZoom":true,
+                        "capturingThreshold":null,
+                        "showToolBarHelp":false,
+                        "errorDialogsActive":true,
+                        "showTutorialLink":true,
+                        "showLogging":true,
+                        "useBrowserForJS":false,
+                        "autoHeight":true,
+                        "scaleContainerClass":"geo-ajuste50",
+                        "allowUpscale":false
+                        };
+                var applet = new GGBApplet(parameters, '5.0', 'applet_container');
+               /*  when used with Math Apps Bundle, uncomment this:*/
+                /*applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web3d/');*/
+
+                window.onload = function() { applet.inject('applet_container'); }
+  </script>
+
+  <!--Encerrar dentro de un div el applet soluciona el problema de impresión en escritorio (el applet se mueve de su posición) En teléfonos cambia sigue el problem.-->
+<div><div id="applet_container" class="geo-ajuste50"></div></div>
 
 
 
