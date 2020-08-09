@@ -77,7 +77,7 @@ Este sitio, su desarrollador y sus colaboradores se deslindan de cualquier incid
                         "id":"ggbApplet",
                         "appName":"geometry",
                         "width":800,
-                        "height":600,
+                        "height":450,
                         "showToolBar":true,
                         "borderColor":null,
                         "showMenuBar":true,
