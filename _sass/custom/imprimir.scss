@@ -25,10 +25,24 @@
         padding-top: unset;
         padding-bottom: unset;
     }
+    .main-content h1:first-of-type{
+        font-weight:300 !important;
+        margin-bottom: 0.5cm;
+    }
+    h1,h2,h3,h4,h5,h6{
+        color: black !important;
+        font-family: "Quicksand", sans-serif !important;
+        font-weight:600 !important;
+    }
     body{
-        color: $grey-dk-250;
-        font-weight: 300;
-        -webkit-print-color-adjust:exact;
-        color-adjust: exact;
+        color: $grey-dk-250 !important;
+        font-weight: 400 !important;
+        font-family: "Raleway", sans-serif !important;
+        -webkit-print-color-adjust:exact !important;
+        color-adjust: exact !important;
+    }
+
+    .deg-sitio{
+        font-weight: 500 !important;
     }
 }
