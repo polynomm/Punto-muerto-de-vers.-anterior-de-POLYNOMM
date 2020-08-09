@@ -204,30 +204,19 @@ Ajuste para deg-sitios según tema
   border-radius: 10px;
   @include deg(map-get($colores-deg-sitio, deg-sitio));
   position:fixed;
+  background-color: $grey-dk-000;
 }
 
 //Geogebra
+//Barra lateral
 .header-open-landscape{
   @include deg(map-get($colores-deg-sitio, deg-sitio));
   @include deg-fondo(map-get($colores-deg-sitio, deg-sitio));
   background-color:white !important;
 }
-.GeoGebraFrame .toolbar .main .moveFloatingBtn, .GeoGebraFrame .toolbar .main .showMoveBtn, .GeoGebraFrame .toolbar .main .hideMoveBtn{
-  background-color: map-get($colores-deg-sitio, alter-deg-sitio);
-}
-.GeoGebraFrame .toolbar .main .moveFloatingBtn:hover, .GeoGebraFrame .toolbar .main .showMoveBtn:hover, .GeoGebraFrame .toolbar .main .hideMoveBtn:hover, .GeoGebraFrame .toolbar .main .moveFloatingBtn:focus, .GeoGebraFrame .toolbar .main .showMoveBtn:focus, .GeoGebraFrame .toolbar .main .hideMoveBtn:focus{
-  background-color: mix(map-get($colores-deg-sitio, alter-deg-sitio), #111, 90%);
+
 }
 
-.GeoGebraFrame .toolbar .toolsPanel .toolButton[selected=true] .gwt-Label {
-  color: map-get($colores-deg-sitio, alter-deg-sitio);
-  font-weight: 600;
-}
-
-.GeoGebraFrame .toolButton[selected=true] .gwt-Label{
-  color:map-get($colores-deg-sitio, alter-deg-sitio);
-}
-}
 
 /*
  Tema sin deg-sitios impresión y móvil
@@ -320,6 +309,41 @@ Ajuste para deg-sitios según tema
   .deg-texto>mjx-container{
     @include alter-texto();
   }
+
+  .deg-sitio.deg-texto>mjx-container{
+    @include alter-texto;
+  }
+  span.deg-sitio.deg-texto{
+    display: inline-flex;
+    &::selection{
+      -webkit-text-fill-color: white;
+    }
+  }
+  /* Let's get this party started */
+::-webkit-scrollbar {
+  width: 8px;
+  position:static;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  @include alter-fondo();
+  position:fixed;
+  background-color: $grey-dk-000;
+}
+
+//Geogebra
+//Barra lateral
+.header-open-landscape{
+  background-color: map-get($colores-deg-sitio, alter-deg-sitio) !important;
+}
+
 }
 
 /*
@@ -337,4 +361,37 @@ deg-sitios secundarios para coloreado...
   color: #fff;
     background: map-get($colores-deg-sitio, alter-deg-sitio) !important;
       -webkit-text-fill-color: white !important;
+}
+
+
+//Aquellos códigos que no son degradados para ambos
+
+//Geogebra
+
+//Botón flotante mover (circular)
+.GeoGebraFrame .toolbar .main .moveFloatingBtn, .GeoGebraFrame .toolbar .main .showMoveBtn, .GeoGebraFrame .toolbar .main .hideMoveBtn{
+  background-color: map-get($colores-deg-sitio, alter-deg-sitio);
+}
+//Botón flotante mover (circular) con evento de mouse
+.GeoGebraFrame .toolbar .main .moveFloatingBtn:hover, .GeoGebraFrame .toolbar .main .showMoveBtn:hover, .GeoGebraFrame .toolbar .main .hideMoveBtn:hover, .GeoGebraFrame .toolbar .main .moveFloatingBtn:focus, .GeoGebraFrame .toolbar .main .showMoveBtn:focus, .GeoGebraFrame .toolbar .main .hideMoveBtn:focus{
+  background-color: mix(map-get($colores-deg-sitio, alter-deg-sitio), #111, 90%);
+}
+
+.GeoGebraFrame .toolbar .toolsPanel .toolButton[selected=true] .gwt-Label {
+  color: map-get($colores-deg-sitio, alter-deg-sitio);
+  font-weight: 600;
+}
+
+//Etiqueta de herramienta seleccionada
+.GeoGebraFrame .toolButton[selected=true] .gwt-Label, .GeoGebraFrame .matAvDesign .NewRadioButtonTreeItemParent,
+.GeoGebraFrame .NewRadioButtonTreeItemParent, .GeoGebraFrame .KeyboardSwitcher .switcherContents .gwt-Button.selected{
+  color:map-get($colores-deg-sitio, alter-deg-sitio) !important;
+}
+.GeoGebraFrame .KeyboardSwitcher *:hover {
+  color: mix(map-get($colores-deg-sitio, alter-deg-sitio), black, 90%) !important;
+}
+//Borde escritura álgebra
+.GeoGebraFrame .matAvDesign .NewRadioButtonTreeItemParent {
+   border-top: map-get($colores-deg-sitio, alter-deg-sitio) solid 1px;
+  border-bottom: map-get($colores-deg-sitio, alter-deg-sitio) solid 1px;
 }

@@ -1,13 +1,31 @@
 .main.tools, .main.algebra{
     margin-left: 0px !important;
+    background-color:white !important;
     
   }
-  #ggbApplet{
+  .GeoGebraFrame{
     ::-webkit-scrollbar-thumb {
         background-image: unset !important;
         background-color: #ccc;
       }
   }
+
+  th, td{
+      min-width: unset !important;
+  }
+  .geo-ajuste50{
+      width: 100%;
+      height: auto;
+  }
+  .gwt-MenuItem{
+      &:before{display:none;}
+  }
+  ul.gwt-MenuBar {
+      padding-left:0px !important;
+    li:before{
+        display:none;
+  }
+}
 @media print{
     .floatingMenuView.transitionIn, .undoRedoPanel div{
         width:0;
@@ -90,10 +108,5 @@
         transform: translateX(-12.5%) scale(0.30);
         transform-origin: 50% 0%;
         margin-bottom: calc(-70% + 20px);
-    }
-}
-
-@media only screen and (max-width:map-get($media-queries, lg)-1px){
-    .geo-ajuste50{
     }
 }

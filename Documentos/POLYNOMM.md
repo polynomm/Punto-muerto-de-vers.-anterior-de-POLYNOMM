@@ -66,6 +66,8 @@ Sin embargo, esto no afecta tu experiencia en el sitio.
 
 ## Disclaimer
 
+Este sitio, su desarrollador y sus colaboradores se deslindan de cualquier incidente relacionado con el sitio.
+
 <script type="text/javascript">
 				function perspective(p){
 					updateHelp(p);
@@ -91,17 +93,17 @@ Sin embargo, esto no afecta tu experiencia en el sitio.
                         "useBrowserForJS":false,
                         "autoHeight":true,
                         "scaleContainerClass":"geo-ajuste50",
-                        "allowUpscale":false
+                        "allowUpscale":true
                         };
                 var applet = new GGBApplet(parameters, '5.0', 'applet_container');
                /*  when used with Math Apps Bundle, uncomment this:*/
                 /*applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web3d/');*/
 
-                window.onload = function() { applet.inject('applet_container'); }
+                window.onload = function() { applet.inject('applet_container'); ggbApplet.recalculateEnviroments(); }
   </script>
 
   <!--Encerrar dentro de un div el applet soluciona el problema de impresión en escritorio (el applet se mueve de su posición) En teléfonos cambia sigue el problem.-->
-<div><div id="applet_container" class="geo-ajuste50"></div></div>
+<div class="geo-ajuste50"><div id="applet_container"></div></div>
 
 
 
