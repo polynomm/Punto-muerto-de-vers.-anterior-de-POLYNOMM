@@ -101,7 +101,7 @@ Los plazos y las publicaciones pueden retrasarse por problemas durante el proces
 
 ### Formato
 
-Lo ideal es enviar por los medios designados un PDF generado en <span>\\( \LaTeX \\)</span> y su código (en un archivo <span>\\( \TeX \\)</span>), en el cual se incluyan todos los gráficos necesarios. De manera alternativa, debes enviar un documento Word con texto justificado y ecuaciones incrustadas. Se desaconseja enviar trabajos realizados a mano.
+Lo ideal es enviar por los medios designados un PDF generado en un editor <span>\\( \LaTeX \\)</span> en el cual se incluyan todos los gráficos necesarios, y su respectivo código (en un archivo <span>\\( \TeX \\)</span>). De manera alternativa, debes enviar un documento Word con texto justificado y ecuaciones incrustadas. Se desaconseja enviar trabajos realizados a mano.
 
 En ningún caso los gráficos podrán estar combinados en un párrafo (dentro del texto), y su formato final no dependerá del formato original.
 
