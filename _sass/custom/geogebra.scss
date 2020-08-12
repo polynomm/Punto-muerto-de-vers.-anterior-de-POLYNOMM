@@ -1,3 +1,5 @@
+// geo<%> clase de contenedor, según cómo se quiera imprimir.
+
 .main.tools, .main.algebra{
     margin-left: 0px !important;
     background-color:white !important;
@@ -13,10 +15,7 @@
   th, td{
       min-width: unset !important;
   }
-  .geo-ajuste50{
-      width: 100%;
-      height: auto;
-  }
+
   .gwt-MenuItem{
       &:before{display:none;}
   }
@@ -25,88 +24,4 @@
     li:before{
         display:none;
   }
-}
-@media print{
-    .floatingMenuView.transitionIn, .undoRedoPanel div{
-        width:0;
-    }
-    .geo-div{
-        width: 50% !important;
-    height: 0;
-    padding-bottom: calc(50% + 30px)!important;
-    }
-    .geo-print95{
-        transform: translateX(-12.5%) scale(0.95);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-5%  +  20px);
-    }
-    .geo-print90{
-        transform: translateX(-12.5%) scale(0.90);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-10%  +  20px);
-    }
-    .geo-print85{
-        transform: translateX(-12.5%) scale(0.85);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-15%  +  20px);
-    }
-    .geo-print80{
-        transform: translateX(-12.5%) scale(0.80);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-20%  +  20px);
-    }
-    .geo-print75{
-        transform: translateX(-12.5%) scale(0.75);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-25% + 20px);
-    }
-    .geo-print70{
-        transform: translateX(-12.5%) scale(0.70);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-30% + 20px);
-    }
-    .geo-print65{
-        transform: translateX(-12.5%) scale(0.65);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-35% + 20px);
-    }
-    .geo-print60{
-        transform: translateX(-12.5%) scale(0.5);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-50% + 20px);
-    }
-    .geo-print55{
-        transform: translateX(-12.5%) scale(0.55);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-45% + 20px);
-    }
-    .geo-print50{
-        transform: scale(0.5);
-        transform-origin: 0% 0%;
-    }
-    .geo-print45{
-        transform: translateX(-12.5%) scale(0.45);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-55% + 20px);
-    }
-    .geo-print40{
-        transform: translateX(-12.5%) scale(0.40);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-60% + 20px);
-    }
-    .geo-print35{
-        transform: translateX(-12.5%) scale(0.35);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-65% + 20px);
-    }
-    .geo-print30{
-        transform: translateX(-12.5%) scale(0.30);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-70% + 20px);
-    }
-    .geo-print25{
-        transform: translateX(-12.5%) scale(0.30);
-        transform-origin: 50% 0%;
-        margin-bottom: calc(-70% + 20px);
-    }
 }

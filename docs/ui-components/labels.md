@@ -10,24 +10,31 @@ nav_order: 3
 Use labels as a way to add an additional mark to a section of your docs. Labels come in a few colors. By default, labels will be blue.
 
 <div class="code-example" markdown="1">
+<br><br><br><br> <br><br><br><br><br> <br>
+<br><br><br><br> <br><br><br><br><br> <br><br><br><br><br> <br>
+
 Default label
-{: .label .deg-sitio .deg-sitio-fondo}
+{: .label .deg-especial .deg-especial-fondo}
 
 Blue label
-{: .label .label-blue }
+{: .label .deg-algebra .deg-algebra-fondo}
 
 Stable
-{: .label .label-green }
+{: .label .deg-casillas .deg-casillas-fondo}
 
 New release
-{: .label .label-purple }
+{: .label .deg-combinatoria .deg-combinatoria-fondo}
 
 Coming soon
-{: .label .label-yellow }
+{: .label .deg-desigualdades .deg-desigualdades-fondo}
+
+Geometria
+{: .label .deg-geometria .deg-geometria-fondo}
 
 Deprecated
-{: .label .label-red }
+{: .label .deg-numeros .deg-numeros-fondo}
 </div>
+
 ```markdown
 Default label
 {: .label }

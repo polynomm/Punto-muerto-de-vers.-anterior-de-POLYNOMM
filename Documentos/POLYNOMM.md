@@ -7,7 +7,7 @@ permalink: /Documentos/POLYNOMM
 last_modified_date: 2020-04-27T17:54:08+0000
 ---
 
-# ¡Esto es POLYN<span class="deg-sitio deg-texto">OMM</span>.github.io!<i class="jpa-anim-rel-partying_face jpa-2em"></i>
+# ¡Esto es POLYN<span class="deg-sitio deg-sitio-texto">OMM</span>.github.io!<i class="jpa-anim-rel-partying_face jpa-2em"></i>
 {:.fs-9}
 
 <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-degVerde.css' | absolute_url }}">
@@ -15,12 +15,12 @@ last_modified_date: 2020-04-27T17:54:08+0000
     jtd.setTheme('degVerde');
 </script>
 
-Este sitio está dedicado a toda la comunidad <span> olímpica </span>{:.deg-sitio .deg-texto} del estado de Tlaxcala <i class="jpa-anim-rel-smiling_face_with_heart_eyes jpa-2em"></i>
+Este sitio está dedicado a toda la comunidad <span> olímpica </span>{:.deg-desigualdades .deg-desigualdades-texto} del estado de Tlaxcala <i class="jpa-anim-rel-smiling_face_with_heart_eyes jpa-2em"></i>
 {:.fs-6 .fw-300}
 
 ---
 
-## ¿Qué encontrarás en POLYN<span class="deg-sitio deg-texto">OMM</span>?
+## ¿Qué encontrarás en POLYN<span class="deg-sitio deg-sitio-texto">OMM</span>?
 
 ### Artículos
 
@@ -50,13 +50,13 @@ En cualquier caso, ¡todas las dinámicas y el contenido publicado en este sitio
 
 El sitio está diseñado para ser no sólo una página web, ¡es una navaja suiza olímpica!
 
-Descubre más en la sección <span class="deg-sitio deg-texto">\\(f(x)\\)</span>.
+Descubre más en la sección <span class="deg-sitio deg-sitio-texto">\\(f(x)\\)</span>.
 
 ### Diseño y optimización.
 
 Este sitio tiene dos principios de desarrollo: simplicidad y estética, porque...
 
-<span class="deg-sitio deg-texto .fs-5">...¡Qué bonito es lo bonito!</span><i class="jpa-anim-rel-beaming_face_with_smiling_eyes jpa-2em"></i>
+<span class="deg-sitio deg-sitio-texto .fs-5">...¡Qué bonito es lo bonito!</span><i class="jpa-anim-rel-beaming_face_with_smiling_eyes jpa-2em"></i>
 
 ## Desarrollo y propiedad.
 
@@ -75,6 +75,7 @@ Este sitio, su desarrollador y sus colaboradores se deslindan de cualquier incid
 				}
                 var parameters = {
                         "id":"ggbApplet",
+                        "material_id":"17499",
                         "appName":"geometry",
                         "width":800,
                         "height":450,
@@ -82,7 +83,7 @@ Este sitio, su desarrollador y sus colaboradores se deslindan de cualquier incid
                         "borderColor":null,
                         "showMenuBar":true,
                         "allowStyleBar":true,
-                        "showAlgebraInput":true,
+                        "showAlgebraInput":false,
                         "enableLabelDrags":false,
                         "enableShiftDragZoom":true,
                         "capturingThreshold":null,
@@ -92,19 +93,18 @@ Este sitio, su desarrollador y sus colaboradores se deslindan de cualquier incid
                         "showLogging":true,
                         "useBrowserForJS":false,
                         "autoHeight":true,
-                        "scaleContainerClass":"geo-ajuste50",
-                        "allowUpscale":true
+                        "scaleContainerClass":"geo50",
+                        "allowUpscale":false
                         };
                 var applet = new GGBApplet(parameters, '5.0', 'applet_container');
                /*  when used with Math Apps Bundle, uncomment this:*/
                 /*applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web3d/');*/
 
-                window.onload = function() { applet.inject('applet_container'); ggbApplet.recalculateEnviroments(); }
+                window.onload = function() { applet.inject('applet_container');}
   </script>
 
   <!--Encerrar dentro de un div el applet soluciona el problema de impresión en escritorio (el applet se mueve de su posición) En teléfonos cambia sigue el problem.-->
-<div class="geo-ajuste50"><div id="applet_container"></div></div>
-
+<div class="geo50"><div id="applet_container"></div></div>
 
 
 

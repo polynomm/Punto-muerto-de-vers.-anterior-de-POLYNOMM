@@ -13,13 +13,13 @@ last_modified_date: 2020-04-27T17:54:08+0000
 {: .fs-9 }
 
 \$\$x^2\$\$
-{: .deg-sitio .deg-texto .grid}
+{: .deg-sitio .deg-sitio-texto .grid}
 
-<span>\\(x^2\\)</span>{: .deg-sitio .deg-texto} Madre de todos los cuadrados.
+<span>\\(x^2\\)</span>{: .deg-sitio .deg-sitio-texto} Madre de todos los cuadrados.
 Just the Docs  gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .deg-sitio .deg-sitio-fondo .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .deg-sitio .deg-texto .fs-5 .mb-4 .mb-md-0 }
+[Get started now](#getting-started){: .btn .deg-numeros .deg-numeros-fondo .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .deg-numeros .deg-numeros-texto .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -104,7 +104,7 @@ $ bundle exec jekyll serve
 4. Point your web browser to [http://localhost:4000](http://localhost:4000)
 
 \$\$x^2\$\$
-{: .deg-sitio .deg-texto .math-display}
+{: .deg-sitio .deg-sitio-texto .math-display}
 
 If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 

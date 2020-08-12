@@ -17,6 +17,7 @@ Tables are responsive by default, allowing wide tables to have a horizontal scro
 | out of stock | good and plenty   | nice  |
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
+{:.over}
 
 </div>
 ```markdown

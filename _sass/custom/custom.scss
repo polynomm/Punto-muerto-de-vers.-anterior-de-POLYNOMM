@@ -1,4 +1,8 @@
-@import "./degradados";
+@import "./degradados/degradados.scss";
 @import "./fuentes";
 @import "./imprimir.scss";
 @import "./geogebra.scss";
+
+table.over * tr td{
+    min-width:120px !important;
+}

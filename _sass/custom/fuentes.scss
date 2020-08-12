@@ -1,5 +1,3 @@
-$body-font-family:'Raleway',sans-serif;
-$mono-font-family:'Ubuntu Mono', monospace;
   .qs{
     font-family: 'Quicksand', sans-serif;
   }
@@ -12,13 +10,35 @@ $mono-font-family:'Ubuntu Mono', monospace;
     font-family: 'Ubuntu Mono', monospace;
   }
 
-  body{
-      text-align: justify;
+  .main-content h1:first-of-type{
+    font-weight:300;
+    margin-bottom: 0.5cm;
+    span{
+      font-weight: inherit;
+    }
+}
+h1{
+  font-weight:300;
+  font-family: "Quicksand", sans-serif ;
+  margin-bottom: 0.5cm;
+  span{
+    font-weight: inherit;
   }
-  h1, h2, h3, h4, h5, h6{
-      font-family: 'Quicksand',sans-serif;
-      text-align: left;    
-  }
+}
+h2,h3,h4,h5,h6, .text-delta{
+    color: black ;
+    font-weight:600;
+}
+.main-content{
+    color: $grey-dk-100 ;
+    font-weight: 400 ;
+    text-align: justify;
+}
+
+[class*=deg-]{
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
   
   .search-result-highlight{
     font-family: 'Quicksand',sans-serif;
