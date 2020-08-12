@@ -129,7 +129,7 @@ De ser posible, se enviará una vista previa de la página antes de publicarla.
 
 Los errores menores sólo necesitan ser indicados.
 
-Puedes añadir cambios significativos, repitiendo el proceso e indicando que harás una actualización de tu contenido.
+Puedes añadir cambios significativos, repitiendo el proceso e indicando que harás una actualización de tu contenido. Sólo puedes añadir a colaboradores que hayan sido invitados.
 
 El contenido puede denunciarse y eliminarse si incumple con los principios y lineamientos de POLYNOMM.
 
