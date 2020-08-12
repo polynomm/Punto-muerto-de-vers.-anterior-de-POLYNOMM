@@ -55,7 +55,7 @@ El contenido debe ser interesante, ir más allá y conducir a retos y soluciones
 
 Es necesario que definas el tema a tratar, pero sobre todo, cómo lo vas a explicar. Toma en cuenta el nivel al que va dirigido. En caso de ser multinivel, cuida que la dificultad aumente progresivamente. 
 
-Por ejemplo, si se trata de una lista de problemas para entrenamiento, es recomendable que sólo se publiquen los problemas, de preferencia iniciando con los más sencillos. Sin embargo, en el caso de una explicación teórica, será necesario explicar de manera clara y elocuente el tema, añadiendo ejemplos, gráficos y aclaraciones.
+Por ejemplo, si se trata de una lista de problemas para entrenamiento, es recomendable que sólo se publiquen los problemas, iniciando con los más sencillos. Sin embargo, en el caso de una explicación teórica, será necesario explicar de manera clara y elocuente el tema, añadiendo ejemplos, gráficos y aclaraciones.
 
 ### Lenguaje
 
