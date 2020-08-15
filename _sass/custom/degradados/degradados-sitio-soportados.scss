@@ -83,13 +83,18 @@ Ajuste para deg-sitios según tema
     .site-title:hover, .site-button:hover , 
     .nav-list .nav-list-item .nav-list-link.active, 
     .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link:hover,
-     .nav-list .nav-list-item .nav-list-link:hover,
-      .nav-list .nav-list-item .nav-list-link.active{
+     .nav-list .nav-list-item .nav-list-link:hover{
       @include deg(map-get($colores-deg-sitio, deg-sitio));
       @include deg-fondo(map-get($colores-deg-sitio, deg-sitio-texto-color));
-      span.deg-sitio-texto{
-        -webkit-text-fill-color: white;
+    }
+    .nav-list-link:hover, .nav-list-link.active{
+      span.deg-sitio.deg-sitio-texto mjx-container{
+          -webkit-text-fill-color: mag-get($colores-deg-sitio, deg-sitio-texto-color) !important;
+          @include deg-fondo(map-get($colores-deg-sitio, deg-sitio-texto-color));
       }
+    }
+    .nav-list-link.active{
+      @include deg-texto();
     }
     
     //Estos son los links junto a la barra de búsqueda. Necesita cambiar el texto a blanco.
@@ -110,11 +115,6 @@ Ajuste para deg-sitios según tema
           visibility: hidden;
         }
       }
-    }
-    
-    //Barra de navegación
-    .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
-      color: map-get($colores-deg-sitio, deg-sitio-texto-color);
     }
   
     //Esto es sólo si la sección del sitio contie

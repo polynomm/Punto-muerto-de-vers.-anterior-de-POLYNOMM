@@ -46,13 +46,20 @@
     }
     
     .site-title:hover, .site-button:hover , 
-    .nav-list .nav-list-item .nav-list-link.active, 
+    .nav-list .nav-list-item .nav-list-link.active,
     .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link:hover,
-     .nav-list .nav-list-item .nav-list-link:hover,
-      .nav-list .nav-list-item .nav-list-link.active{
+     .nav-list .nav-list-item .nav-list-link:hover{
       @include alter-fondo(map-get($colores-deg-sitio, alter-sitio-texto-color), map-get($colores-deg-sitio, alter-sitio));
       span.deg-sitio-texto{
-        -webkit-text-fill-color: map-get($colores-deg-sitio, alter-sitio);
+        @include alter-fondo(map-get($colores-deg-sitio, alter-sitio-texto-color), map-get($colores-deg-sitio, alter-sitio));
+      }
+    } 
+    .nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active{
+      @include alter-fondo(map-get($colores-deg-sitio, alter-sitio-texto-color), map-get($colores-deg-sitio, alter-sitio));
+      span.deg-sitio.deg-sitio-texto {
+        mjx-container{
+          @include alter-texto(map-get($colores-deg-sitio, alter-sitio-texto-color));
+        }
       }
     }
     
@@ -72,10 +79,6 @@
           visibility: hidden;;
         }
       }
-    }
-    
-    .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
-      @include alter-texto(map-get($colores-deg-sitio, alter-sitio));
     }
   
     //Esto es duplicado de deg-sitio.
