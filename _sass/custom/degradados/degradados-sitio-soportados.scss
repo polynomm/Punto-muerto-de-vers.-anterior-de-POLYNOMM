@@ -1,9 +1,9 @@
-/*$colores-deg-sitio: (
+$colores-deg-sitio: (
   deg-sitio: linear-gradient(to top, #21d4fd 0%, #b721ff 100%),
   alter-sitio: #6b7afe,
   deg-sitio-texto-color: white,
-  alter-sitio-texto-color: white
-) !default;*/
+  alter-sitio-texto-color: white,
+) !default;
 @media only screen and (min-width: map-get($media-queries,md)){
   .deg-sitio {
     @include deg(map-get($colores-deg-sitio, deg-sitio));
