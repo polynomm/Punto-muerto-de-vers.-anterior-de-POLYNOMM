@@ -134,5 +134,12 @@ $media-queries: (
   xl: 1400px,
 ) !default;
 
+$colores-deg-sitio: (
+  deg-sitio: linear-gradient(to top, #21d4fd 0%, #b721ff 100%),
+  alter-sitio: #6b7afe,
+  deg-sitio-texto-color: white,
+  alter-sitio-texto-color: white,
+) !default;
+
 
 
