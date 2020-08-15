@@ -1,13 +1,14 @@
 ---
 layout: default
-title: $$ f(x) $$
-nav_order: 9
+title: <span class="deg-sitio deg-sitio-texto">\( f(x) \)</span>
 description: "Declaración de todas las intenciones del sitio."
 permalink: /Documentos/POLYNOMM
 last_modified_date: 2020-04-27T17:54:08+0000
+parent: Documentos
+nav_order: 1
 ---
 
-# ¡Esto es POLYN<span class="deg-sitio deg-sitio-texto">OMM</span>.github.io!<i class="jpa-anim-rel-partying_face jpa-2em"></i>
+# ¡Esto es POLYN<span class="deg-sitio deg-sitio-texto">OMM</span>.github.io! <i class="jpa-anim-rel-partying_face jpa-2em"></i>
 {:.fs-9}
 
 <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-degVerde.css' | absolute_url }}">

@@ -31,12 +31,18 @@
         padding-top: unset;
         padding-bottom: unset;
     }
+    .breadcrumb-nav{
+        display:none;
+    }
     .main-content h1:first-of-type{
         font-weight:300 !important;
         margin-bottom: 0.5cm;
         span{
             font-weight: inherit !important;
         }
+    }
+    hr{
+        height: 0px;
     }
     h1{
         font-weight:300;
